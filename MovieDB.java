@@ -9,7 +9,7 @@ public class MovieDB {
         //enter is new movie, commas seperate PIVS
             while (in.hasNextLine()) {
                 String[] movie = in.nextLine().split("[|]");
-                Movie m = new Movie(movie[0],movie[1],Integer.parseInt(movie[2]),movie[3]);
+                Movie m = new Movie(movie[0].trim(),movie[1].trim(),Integer.parseInt(movie[2].trim()),movie[3].trim());
                 db.add(m);
             }
             return db;
