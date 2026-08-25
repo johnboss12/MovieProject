@@ -1,4 +1,4 @@
-public class Movie{
+public class Movie {
     private String title;
     private String actor;
     private int year;
@@ -21,5 +21,8 @@ public class Movie{
     }
     public String getDirector(){
         return directors;
+    }
+    public String toString(){
+        return (title + " | " + actor + " | " + year + " | " + directors);
     }
 }
