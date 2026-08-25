@@ -9,7 +9,7 @@ public class MovieDB {
             ArrayList<Movie> db = new ArrayList<>();
         //enter is new movie, commas seperate PIVS
             while (in.hasNextLine()) {
-                String[] movie = in.nextLine().split("[|]");
+                String[] movie = in.nextLine().split("[\u2028]");
                 Movie m = new Movie(movie[0].trim(),movie[1].trim(),Integer.parseInt(movie[2].trim()),movie[3].trim());
                 db.add(m);
             }
