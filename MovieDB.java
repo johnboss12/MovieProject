@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MovieDB {
+
     public static ArrayList<Movie> readMoviesIntoAL(String fileName){
        try(Scanner in = new Scanner(new File(fileName))){    
             ArrayList<Movie> db = new ArrayList<>();
@@ -19,4 +20,12 @@ public class MovieDB {
         return new ArrayList<Movie>();
        }
     }
+
+    public static void main(String[] args){
+        ArrayList<Movie> db = readMoviesIntoAL("Movies.txt");
+        for(int i=0; i<db.size();i++)
+        System.out.println(db.get(i).toString());
+    }
 }    
+
+
