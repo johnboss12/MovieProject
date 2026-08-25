@@ -20,12 +20,4 @@ public class MovieDB {
         return new ArrayList<Movie>();
        }
     }
-
-    public static void main(String[] args){
-        ArrayList<Movie> db = readMoviesIntoAL("Movies.txt");
-        for(int i=0; i<db.size();i++)
-        System.out.println(db.get(i).toString());
-    }
 }    
-
-

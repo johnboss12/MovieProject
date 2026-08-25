@@ -22,4 +22,7 @@ public class Movie {
     public String getDirector(){
         return directors;
     }
+    public String toString(){
+        return (title + " | " + actor + " | " + year + " | " + directors);
+    }
 }
