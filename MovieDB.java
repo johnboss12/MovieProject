@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MovieDB {
+
     public static ArrayList<Movie> readMoviesIntoAL(String fileName){
        try(Scanner in = new Scanner(new File(fileName))){    
             ArrayList<Movie> db = new ArrayList<>();
